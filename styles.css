@@ -711,12 +711,17 @@ body {
     }
 
     .contact-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
         gap: 1.25rem;
     }
 
     .contact-card {
         padding: 1.5rem;
+        width: 100%;
+        box-sizing: border-box;
+        min-width: 0;
+        overflow-wrap: anywhere;
+        word-break: break-word;
     }
 
     .social-links {
@@ -725,6 +730,19 @@ body {
 
     .social-link {
         padding: 0.9rem 1rem;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+    .social-icon {
+        flex-shrink: 0;
+    }
+
+    .contact-list li {
+        overflow-wrap: anywhere;
+        word-break: break-word;
     }
 
     .exp-header {
